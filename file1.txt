@@ -4,3 +4,4 @@ line3
 line4
 code suggest on file1
 file1
+看起来，这里就利用之前的 diff postion 然后，评论的 content 存储了评论的内容和代码建议的内容，感觉前端拿出来 diff_position 那段代码之后，和评论里面的代码建议内容，然后用插件 diff 一下。这样就可以了
