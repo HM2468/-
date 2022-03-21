@@ -1,0 +1,6 @@
+line1
+line2
+line3
+edit file 2
+line5
+file2
