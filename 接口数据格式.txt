@@ -1,0 +1,248 @@
+
+ PR diff 文件差异返回数据格式
+
+{
+	"added_lines": 1,
+	"removed_lines": 1,
+	"count": 1,
+	"diff_refs": {
+		"base_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+		"start_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+		"head_sha": "2624c6e28808d4db970c4d015c6bd095500d0ecc"
+	},
+	"diffs": [{
+		"id": "72c3d5461fcde5095742a0c13bb2805e527427f4",
+		"conflict": null,
+		"added_lines": 1,
+		"removed_lines": 1,
+		"diff_file_loc": 5,
+		"old_file_loc": 5,
+		"new_file_loc": 5,
+		"statistic": {
+			"type": "edit_file",
+			"path": "diff_line.txt",
+			"new_path": "diff_line.txt",
+			"old_path": "diff_line.txt",
+			"new_oid": "72c3d5461fcde5095742a0c13bb2805e527427f4",
+			"old_oid": "268185484434bda586922619ead46c68156f72a5",
+			"viewed": false
+		},
+		"head": {
+			"type": "none_deleted_file",
+			"name": "diff_line.txt",
+			"url": "/api/enterprises/osc/programs/hm/projects/code-suggest/2624c6e28808d4db970c4d015c6bd095500d0ecc/blobs?path=diff_line.txt",
+			"commit_id": "2624c6e28808d4db970c4d015c6bd095500d0ecc",
+			"commit_short_id": "2624c6e",
+			"author_name": "osc-admin112",
+			"author_avatar": "http://test.gitee.work/api/facade/rest/v1/companies/osc/users/logo/avatar/user/1",
+			"authored_date": "2022-03-21T14:20:58.000+08:00"
+		},
+		"content": {
+			"code": 0,
+			"text": [{
+				"type": "old",
+				"old_line": {
+					"line_num": 1,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_1_1"
+				},
+				"new_line": {
+					"line_num": "",
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_1_1"
+				},
+				"line_content": "\u003cspan id=\"LC1\" class=\"line\"\u003eline1\u003c/span\u003e\n"
+			}, {
+				"type": "new",
+				"old_line": {
+					"line_num": "",
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1"
+				},
+				"new_line": {
+					"line_num": 1,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1"
+				},
+				"line_content": "\u003cspan id=\"LC1\" class=\"line\"\u003eline1\u003cspan class=\"idiff left right\"\u003e+1\u003c/span\u003e\u003c/span\u003e\n"
+			}, {
+				"type": null,
+				"old_line": {
+					"line_num": 2,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_2"
+				},
+				"new_line": {
+					"line_num": 2,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_2"
+				},
+				"line_content": "\u003cspan id=\"LC2\" class=\"line\"\u003eline2\u003c/span\u003e\n"
+			}, {
+				"type": null,
+				"old_line": {
+					"line_num": 3,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_3_3"
+				},
+				"new_line": {
+					"line_num": 3,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_3_3"
+				},
+				"line_content": "\u003cspan id=\"LC3\" class=\"line\"\u003eline3\u003c/span\u003e\n"
+			}, {
+				"type": null,
+				"old_line": {
+					"line_num": 4,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_4_4"
+				},
+				"new_line": {
+					"line_num": 4,
+					"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_4_4"
+				},
+				"line_content": "\u003cspan id=\"LC4\" class=\"line\"\u003eline4\u003c/span\u003e\n"
+			}]
+		}
+	}],
+	"msg": null
+}
+
+
+创建PR评论时的post请求数据
+{
+	"note": {
+		"note": "这是第一条评论",
+		"noteable_id": 161,
+		"noteable_type": "PullRequest",
+		"parent_id": null,
+		"commit_id": "2624c6e28808d4db970c4d015c6bd095500d0ecc",
+		"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1",
+		"diff_position_attributes": {
+			"base_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+			"start_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+			"head_sha": "2624c6e28808d4db970c4d015c6bd095500d0ecc",
+			"new_line": 1,
+			"new_path": "diff_line.txt",
+			"old_path": "diff_line.txt"
+		}
+	}
+}
+
+
+文件改动页的评论返回格式
+[{
+	"id": 49,
+	"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1",
+	"resolved_enabled": false,
+	"resolved_at": null,
+	"statistic": {
+		"type": "edit_file",
+		"path": "diff_line.txt",
+		"new_path": "diff_line.txt",
+		"old_path": "diff_line.txt",
+		"new_oid": "72c3d5461fcde5095742a0c13bb2805e527427f4",
+		"old_oid": "268185484434bda586922619ead46c68156f72a5"
+	},
+	"content": {
+		"code": 0,
+		"text": [{
+			"type": "old",
+			"old_line": {
+				"line_num": 1,
+				"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_1_1"
+			},
+			"new_line": {
+				"line_num": "",
+				"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_1_1"
+			},
+			"line_content": "\u003cspan id=\"LC1\" class=\"line\"\u003eline1\u003c/span\u003e\n"
+		}, {
+			"type": "new",
+			"old_line": {
+				"line_num": "",
+				"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1"
+			},
+			"new_line": {
+				"line_num": 1,
+				"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1"
+			},
+			"line_content": "\u003cspan id=\"LC1\" class=\"line\"\u003eline1\u003cspan class=\"idiff left right\"\u003e+1\u003c/span\u003e\u003c/span\u003e\n"
+		}]
+	},
+	"notes": [{
+		"created_at": "2022-03-21T14:37:42.096+08:00",
+		"updated_at": "2022-03-21T14:37:42.096+08:00",
+		"id": 49,
+		"commit_id": "2624c6e28808d4db970c4d015c6bd095500d0ecc",
+		"note": "这是第一条评论",
+		"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1",
+		"branch_name": null,
+		"operating": {
+			"can_modify": true,
+			"can_delete": true
+		},
+		"emoji_comments": [],
+		"root_id": 49,
+		"resolved_enabled": false,
+		"resolved_at": null,
+		"root_node": true,
+		"author": {
+			"created_at": "2022-03-15T11:26:52.032+08:00",
+			"updated_at": "2022-03-17T14:09:21.000+08:00",
+			"id": 3,
+			"uuid": "1",
+			"username": "osc-admin",
+			"name": "osc-admin112",
+			"email": "lixiujuan@oschina.cn",
+			"avatar_url": "http://test.gitee.work/api/facade/rest/v1/companies/osc/users/logo/avatar/user/1",
+			"url": "",
+			"html_url": "",
+			"avatar": "http://test.gitee.work/api/facade/rest/v1/companies/osc/users/logo/avatar/user/1",
+			"login": "osc-admin"
+		},
+		"diff_position": {
+			"id": 3,
+			"base_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+			"head_sha": "2624c6e28808d4db970c4d015c6bd095500d0ecc",
+			"start_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+			"new_line": 1,
+			"new_path": "diff_line.txt",
+			"old_line": null,
+			"old_path": "diff_line.txt",
+			"start_line_code": null,
+			"start_new_line": null,
+			"start_old_line": null,
+			"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1",
+			"outdated": false
+		},
+		"resolved_user": null
+	}],
+	"author": {
+		"created_at": "2022-03-15T11:26:52.032+08:00",
+		"updated_at": "2022-03-17T14:09:21.000+08:00",
+		"id": 3,
+		"uuid": "1",
+		"username": "osc-admin",
+		"name": "osc-admin112",
+		"email": "lixiujuan@oschina.cn",
+		"avatar_url": "http://test.gitee.work/api/facade/rest/v1/companies/osc/users/logo/avatar/user/1",
+		"url": "",
+		"html_url": "",
+		"avatar": "http://test.gitee.work/api/facade/rest/v1/companies/osc/users/logo/avatar/user/1",
+		"login": "osc-admin"
+	},
+	"diff_position": {
+		"id": 3,
+		"base_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+		"head_sha": "2624c6e28808d4db970c4d015c6bd095500d0ecc",
+		"start_sha": "6fca3378afe0ee5cc26c9e843fbefb3fd0478fc8",
+		"new_line": 1,
+		"new_path": "diff_line.txt",
+		"old_line": null,
+		"old_path": "diff_line.txt",
+		"start_line_code": null,
+		"start_new_line": null,
+		"start_old_line": null,
+		"line_code": "ee9995416124b0f63430b12572951149f76f6b9f_2_1",
+		"outdated": false
+	},
+	"resolved_user": null
+}]
+
+
+
+
+
