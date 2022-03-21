@@ -8,6 +8,7 @@ line4
   encoding: utf8mb4
   reconnect: false
   database: gitlabhq_production
+  观察1
    观察接受代码建议
   pool: 200
   username: giteeci
